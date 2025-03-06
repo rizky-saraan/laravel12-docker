@@ -1,16 +1,33 @@
-# Laravel 12 Docker Template
+# Laravel 12 Docker Template Docker
 
 ## Struktur Folder
 
 ```
-laravel-docker-template/
+laravel-app/
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+├── tests/
+├── docker/
+│   ├── php/
+│   │   ├── Dockerfile
+│   │   ├── php.ini
+│   ├── supervisor/
+│   │   ├── laravel-worker.conf
+│   ├── redis/
+│       ├── redis.conf
 ├── docker-compose.yml
-├── Dockerfile
-├── .env.example
-├── supervisor/
-│   └── laravel-worker.conf
-├── src/ (kosong, nanti Laravel 12 akan di-copy ke sini)
-└── README.md
+├── .env
+├── .gitignore
+├── artisan
+├── composer.json
+├── package.json
+├── README.md
 ```
 
 ---
@@ -21,9 +38,8 @@ laravel-docker-template/
 
 Download zip atau clone dari repo yang disediakan.
 
-### 2. Copy Laravel Project
+### 2. Pastikan struktur folder yang diclone sudah sesuai
 
-Masukkan semua file Laravel 12 kamu ke folder `src/`.
 
 ### 3. Update .env
 
